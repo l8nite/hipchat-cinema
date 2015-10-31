@@ -13,24 +13,33 @@
 
         public static Dictionary<string, Color> PreferredColors = new Dictionary<string, Color>
         {
-            { "Buttercup", Color.Purple },
-            { "Count Rugen", Color.Red },
-            { "Dread Pirate Roberts", Color.Green },
-            { "Humperdinck", Color.Purple },
-            { "Inigo", Color.Yellow },
-            { "Man In Black", Color.Green },
-            { "NARRATOR", Color.Gray },
-            { "R.O.U.S.", Color.Red },
-            { "Valerie", Color.Purple },
-            { "Vizzini", Color.Yellow },
-            { "Westley", Color.Green },
-
-            //{ "CEREAL", Color.Yellow },
-            //{ "DADE", Color.Green },
+            //{ "Buttercup", Color.Purple },
+            //{ "Count Rugen", Color.Red },
+            //{ "Dread Pirate Roberts", Color.Green },
+            //{ "Humperdinck", Color.Purple },
+            //{ "Inigo", Color.Yellow },
+            //{ "Man In Black", Color.Green },
             //{ "NARRATOR", Color.Gray },
-            //{ "NIKON", Color.Purple },
-            //{ "KATE", Color.Purple },
-            //{ "PLAGUE", Color.Red },
+            //{ "R.O.U.S.", Color.Red },
+            //{ "Valerie", Color.Purple },
+            //{ "Vizzini", Color.Yellow },
+            //{ "Westley", Color.Green },
+
+            //{ "ARTHUR", Color.Red },
+            //{ "FATHER", Color.Purple },
+            //{ "BEDEMIR", Color.Green },
+            //{ "GUARD #1", Color.Purple },
+            //{ "HERBERT", Color.Yellow },
+            //{ "LAUNCELOT", Color.Green },
+            //{ "NARRATOR", Color.Gray },
+            //{ "BLACK KNIGHT", Color.Gray },
+
+            { "CEREAL", Color.Yellow },
+            { "DADE", Color.Green },
+            { "NARRATOR", Color.Gray },
+            { "NIKON", Color.Purple },
+            { "KATE", Color.Purple },
+            { "PLAGUE", Color.Red },
 
             //{ "Bill", Color.Green },
             //{ "Bill & Ted", Color.Green },
@@ -41,6 +50,11 @@
             //{ "Ted", Color.Yellow },
             //{ "Ted2", Color.Red },
             //{ "Rufus", Color.Purple },
+
+            //{ "Doc", Color.Gray },
+            //{ "Marty", Color.Green },
+            //{ "Biff", Color.Yellow },
+            //{ "Jennifer", Color.Purple }
         };
 
         public static void Main(string[] args)
@@ -51,7 +65,7 @@
                 startScene = Int32.Parse(args[0]);
             }
 
-            var script = System.IO.File.ReadAllLines(@"C:\Work\HipchatCinema\tpb.txt");
+            var script = System.IO.File.ReadAllLines(@"C:\Work\hipchat-cinema\hackers.txt");
 
             var scenes = new List<Scene>();
 
